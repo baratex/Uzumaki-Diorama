@@ -266,8 +266,8 @@ footer{
     :root{
     --height: 120px;
     --width: 214px;
-    --shadowheight: 40px;
-    --shadowwidth: 75px;
+    --shadowheight: 60px;
+    --shadowwidth: 80px;
     --border: 10px;
     --depth: 70px;
     --translateborder: -30px;
@@ -278,9 +278,9 @@ footer{
         left: -50px;
         transform: 
         translateZ(-180px)
-        translateX(calc(var(--translateX) / 1.8))
-        translateY(calc(var(--translateY) / 1.8))
-        scaleX(calc(var(--scaleX) / 1.5))
-        scaleY(calc(var(--scaleY) / 1.5));
+        translateX(calc(var(--translateX) / 2))
+        translateY(calc(var(--translateY) / 1.62))
+        scaleX(calc(var(--scaleX) / 1.2))
+        scaleY(calc(var(--scaleY) / 1.2));
     }
 }
