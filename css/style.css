@@ -58,6 +58,9 @@ article .container .images {
   -webkit-filter: drop-shadow(2px 2px 10px black);
           filter: drop-shadow(2px 2px 10px black);
 }
+article .container .images.i6 {
+  opacity: 0;
+}
 
 .i1 {
   -webkit-transform: translateZ(-4px);

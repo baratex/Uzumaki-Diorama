@@ -66,6 +66,11 @@ article {
             height: var(--height);
             inset: var(--border);
             filter: drop-shadow(2px 2px 10px black);
+
+            &.i6{
+                opacity: 0;
+            }
+            
         }
     }
 
