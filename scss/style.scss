@@ -9,6 +9,8 @@ $translateborder: -20px;
 :root{
 --height: 360px;
 --width: 640px;
+--shadowheight: 100px;
+--shadowwidth: 200px;
 --border: 20px;
 --depth: 110px;
 --translateborder: -20px;
@@ -43,8 +45,8 @@ article {
         rotateY(var(--rotateY));
 
         &::after{
-            width: calc(var(--width) + 200px);
-            height: calc(var(--height) + 100px);
+            width: calc(var(--width) + var(--shadowwidth));
+            height: calc(var(--height) + var(--shadowheight));
             content:"";
             background: rgba(0,0,0, 0.7);
             box-shadow: 0 0 10px black;
@@ -211,9 +213,22 @@ footer{
     :root{
     --height: 240px;
     --width: 427px;
+    --shadowheight: 80px;
+    --shadowwidth: 160px;
     --border: 15px;
     --depth: 70px;
     --translateborder: -30px;
+    }
+
+    article .container::after{
+    top: -30px;
+    left: -80px;
+    transform: 
+        translateZ(-180px)
+        translateX(calc(var(--translateX) / 1.5))
+        translateY(calc(var(--translateY) / 1.5))
+        scaleX(calc(var(--scaleX) / 1.2))
+        scaleY(calc(var(--scaleY) / 1.2));
     }
 
     .attribution { 
@@ -227,9 +242,22 @@ footer{
     :root{
     --height: 180px;
     --width: 320px;
+    --shadowheight: 60px;
+    --shadowwidth: 100px;
     --border: 10px;
     --depth: 70px;
     --translateborder: -30px;
+    }
+
+    article .container::after{
+        top: -40px;
+        left: -50px;
+        transform: 
+        translateZ(-180px)
+        translateX(calc(var(--translateX) / 1.5))
+        translateY(calc(var(--translateY) / 1.5))
+        scaleX(calc(var(--scaleX) / 1.2))
+        scaleY(calc(var(--scaleY) / 1.2));
     }
 }
 
@@ -238,8 +266,21 @@ footer{
     :root{
     --height: 120px;
     --width: 214px;
+    --shadowheight: 40px;
+    --shadowwidth: 75px;
     --border: 10px;
     --depth: 70px;
     --translateborder: -30px;
+    }
+
+    article .container::after{
+        top: -40px;
+        left: -50px;
+        transform: 
+        translateZ(-180px)
+        translateX(calc(var(--translateX) / 1.8))
+        translateY(calc(var(--translateY) / 1.8))
+        scaleX(calc(var(--scaleX) / 1.5))
+        scaleY(calc(var(--scaleY) / 1.5));
     }
 }
